@@ -8,7 +8,7 @@ const BlogCards = () => {
   const visibleBlogs = showAll ? blogData : blogData.slice(0, 4);
 
   return (
-    <div>
+    <div className="px-[40px] py-[20px] " >
       <div className="flex flex-wrap gap-4">
         {visibleBlogs.map((blog) => (
           <div
