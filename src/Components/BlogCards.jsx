@@ -8,12 +8,12 @@ const BlogCards = () => {
   const visibleBlogs = showAll ? blogData : blogData.slice(0, 4);
 
   return (
-    <div className="px-[40px] py-[20px] " >
-      <div className="flex flex-wrap gap-4">
+    <div className="px-[40px] py-[20px]  " >
+      <div className="flex flex-wrap gap-4 ">
         {visibleBlogs.map((blog) => (
           <div
             key={blog.id}
-            className="flex flex-col w-[276px] h-[290px] border border-red-800 rounded-lg"
+            className="flex flex-col w-[276px] h-[290px] border shadow-md border-gray-300  rounded-lg"
           >
             <img
               src={blog.imgUrl}
@@ -36,7 +36,7 @@ const BlogCards = () => {
       {!showAll && (
         <button 
           onClick={() => setShowAll(true)} 
-          className="mt-4 px-4 py-2 bg-blue-600 text-white rounded-lg"
+          className="mt-4 px-4 py-2 bg-[#ffeee7] w-[140px] text-white rounded-lg"
         >
           View All
         </button>

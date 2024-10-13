@@ -35,7 +35,7 @@ const Dropdown = ({
         </span>
       </button>
 
-      <div className="absolute hidden group-hover:block mt-2 w-48 bg-white shadow-lg border border-gray-200 rounded-md">
+      <div className="absolute z-[9999999999] hidden group-hover:block mt-2 w-48 bg-white shadow-lg border border-gray-200 rounded-md">
         <ul>
           {items.map((item, index) => (
             <li
