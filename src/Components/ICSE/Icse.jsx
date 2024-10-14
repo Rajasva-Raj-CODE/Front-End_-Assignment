@@ -1,32 +1,33 @@
 import React, { useState } from "react";
-import { neetdata } from "./Neetdata";
+import { IcseData } from "./IcseData";
 
-const Neet = () => {
+const Icse = () => {
   const [showAll, setShowAll] = useState(false); // Manage state to toggle view
 
   // Conditionally limit the number of cards
-  const visibleNeetData = showAll ? neetdata : neetdata.slice(0, 4);
+  const visibleBlogs = showAll ? IcseData : IcseData.slice(0, 4);
 
   return (
     <div className="px-[40px] py-[20px]  " >
-         <h1>NEET</h1>
+          <h1>ICSE</h1>
       <div className="flex flex-wrap gap-4 ">
-        {visibleNeetData.map((neet) => (
+    
+        {visibleBlogs.map((blog) => (
           <div
-            key={neet.id}
+            key={blog.id}
             className="flex flex-col w-[276px] h-[290px] border shadow-md border-gray-300  rounded-lg"
           >
             <img
-              src={neet.imgUrl}
-              alt={neet.title}
+              src={blog.imgUrl}
+              alt={blog.title}
               className="rounded-t-lg"
             />
             <div className="flex flex-col">
               <div className="p-3">
-                <h2 className="font-[600] text-[#000]">{neet.title.slice(0,43,)}</h2>
+                <h2 className="font-[600] text-[#000]">{blog.title}</h2>
               </div>
               <div className="px-3">
-                <p className="text-[#666] font-[400]">{neet.description.slice(0,62)}</p>
+                <p className="text-[#666] font-[400]">{blog.description}</p>
               </div>
             </div>
           </div>
@@ -46,4 +47,4 @@ const Neet = () => {
   );
 };
 
-export default Neet;
+export default Icse;

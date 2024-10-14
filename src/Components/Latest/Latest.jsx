@@ -1,15 +1,17 @@
 import React, { useState } from "react";
-import blogData from "../data/data.json"; 
+import {latestdata} from './Latestdata'
 
-const BlogCards = () => {
+const Latest = () => {
   const [showAll, setShowAll] = useState(false); // Manage state to toggle view
 
   // Conditionally limit the number of cards
-  const visibleBlogs = showAll ? blogData : blogData.slice(0, 4);
+  const visibleBlogs = showAll ? latestdata : latestdata.slice(0, 4);
 
   return (
     <div className="px-[40px] py-[20px]  " >
+          <h1>Latest</h1>
       <div className="flex flex-wrap gap-4 ">
+    
         {visibleBlogs.map((blog) => (
           <div
             key={blog.id}
@@ -36,7 +38,7 @@ const BlogCards = () => {
       {!showAll && (
         <button 
           onClick={() => setShowAll(true)} 
-          className="mt-4 px-4 py-2 bg-[#ffeee7] w-[140px] text-white rounded-lg"
+          className="mt-4 px-4 py-2 bg-[#ffeee7] w-[140px] text-orange-500 text-semibold rounded-lg"
         >
           View All
         </button>
@@ -45,4 +47,4 @@ const BlogCards = () => {
   );
 };
 
-export default BlogCards;
+export default Latest;

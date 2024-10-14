@@ -1,4 +1,4 @@
-[
+export const latestdata =[
   {
     "id": 1,
     "imgUrl": "https://www.vedantu.com/seo/blog-images/blog/vedantu-eklavya-batch/2324da5a-6db3-4a18-87b9-8be6fffb7b34",

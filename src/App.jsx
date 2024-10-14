@@ -1,12 +1,16 @@
 import React from "react";
-import BlogCards from "./Components/BlogCards";
 import Navbar from "./Components/Navbar";
+import Neet from "./Components/Neet/Neet";
+import Latest from "./Components/Latest/Latest";
+import Icse from "./Components/ICSE/Icse";
 
 const App = () => {
   return (
     <>
       <Navbar />
-      <BlogCards />
+      <Latest />
+      <Neet />
+      <Icse/>
     </>
   );
 };
