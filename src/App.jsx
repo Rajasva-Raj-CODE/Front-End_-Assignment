@@ -10,6 +10,9 @@ import Olympiad from "./Components/Olympiad/Olympiad";
 import Math from "./Components/Maths/Math";
 import Biology from "./Components/Biology/Biology";
 import General from "./Components/General/General";
+import CUET from "./Components/CUET/CUET";
+import LearnandGrow from "./Components/Learn-and-Grow/LearnandGrow";
+import ExamMotivation from "./Components/exam-motivation/ExamMotivation";
 
 const App = () => {
   return (
@@ -25,6 +28,9 @@ const App = () => {
       <Math/>
       <Biology/>
       <General/>
+      <CUET/>
+      <LearnandGrow/>
+      <ExamMotivation/>
     </>
   );
 };
