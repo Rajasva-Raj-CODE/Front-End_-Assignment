@@ -8,9 +8,11 @@ const Olympiad = () => {
   const visibleNeetData = showAll ? Olympiaddata : Olympiaddata.slice(0, 4);
 
   return (
-    <div className="px-[40px] py-[20px]  " >
-         <h1>Olympiad</h1>
-      <div className="flex flex-wrap gap-4 ">
+    <div className="">
+      <h1 className="text-xl font-bold text-[#222] pb-5 border-b border-gray-500">
+        Olympiad
+      </h1>
+      <div className="flex flex-wrap gap-4 mt-8">
         {visibleNeetData.map((neet) => (
           <div
             key={neet.id}
@@ -19,14 +21,18 @@ const Olympiad = () => {
             <img
               src={neet.imgUrl}
               alt={neet.title}
-              className="rounded-t-lg"
+              className="rounded-t-lg h-[144px] w-[274px]"
             />
             <div className="flex flex-col">
               <div className="p-3">
-                <h2 className="font-[600] text-[#000]">{neet.title.slice(0,43,)}</h2>
+                <h2 className="font-[600] text-[#000]">
+                  {neet.title.slice(0, 43)}
+                </h2>
               </div>
               <div className="px-3">
-                <p className="text-[#666] font-[400]">{neet.description.slice(0,62)}</p>
+                <p className="text-[#666] font-[400]">
+                  {neet.description.slice(0, 62)}
+                </p>
               </div>
             </div>
           </div>
@@ -35,9 +41,9 @@ const Olympiad = () => {
 
       {/* Button to toggle between showing limited and all cards */}
       {!showAll && (
-        <button 
-          onClick={() => setShowAll(true)} 
-          className="mt-4 px-4 py-2 bg-[#ffeee7] w-[140px] text-orange-500 text-semibold rounded-lg"
+        <button
+          onClick={() => setShowAll(true)}
+          className="w-[360px] h-[40px] flex justify-center rounded-[4px] bg-[#ffeee7] font-open-sans text-[13px] font-semibold tracking-[0.5px] text-center mx-auto my-[35px] p-[10px] text-[#ff6200]"
         >
           View All
         </button>

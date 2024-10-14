@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import {Mathdata} from './Mathdata'
+import { Mathdata } from "./Mathdata";
 
 const Math = () => {
   const [showAll, setShowAll] = useState(false); // Manage state to toggle view
@@ -8,10 +8,11 @@ const Math = () => {
   const visibleBlogs = showAll ? Mathdata : Mathdata.slice(0, 3);
 
   return (
-    <div className="px-[40px] py-[20px]  " >
-          <h1>Maths</h1>
-      <div className="flex flex-wrap gap-4 ">
-    
+    <div className=" ">
+      <h1 className="text-xl font-bold text-[#222] pb-5 border-b border-gray-500">
+        Maths
+      </h1>
+      <div className="flex flex-wrap gap-4 mt-8 ">
         {visibleBlogs.map((blog) => (
           <div
             key={blog.id}
@@ -20,7 +21,7 @@ const Math = () => {
             <img
               src={blog.imgUrl}
               alt={blog.title}
-              className="rounded-t-lg"
+              className="rounded-t-lg h-[144px] w-[274px]"
             />
             <div className="flex flex-col">
               <div className="p-3">
@@ -36,9 +37,9 @@ const Math = () => {
 
       {/* Button to toggle between showing limited and all cards */}
       {!showAll && (
-        <button 
-          onClick={() => setShowAll(true)} 
-          className="mt-4 px-4 py-2 bg-[#ffeee7] w-[140px] text-orange-500 text-semibold rounded-lg"
+        <button
+          onClick={() => setShowAll(true)}
+          className="w-[360px] h-[40px] flex justify-center rounded-[4px] bg-[#ffeee7] font-open-sans text-[13px] font-semibold tracking-[0.5px] text-center mx-auto my-[35px] p-[10px] text-[#ff6200]"
         >
           View All
         </button>
