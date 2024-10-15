@@ -15,7 +15,7 @@ import LearnandGrow from "./Components/Learn-and-Grow/LearnandGrow";
 import ExamMotivation from "./Components/exam-motivation/ExamMotivation";
 import Poster from "./Components/Poster";
 import Footer from "./Components/Footer/Footer";
-import Card from "./Components/common/Card";
+
 
 const App = () => {
   return (
@@ -36,7 +36,6 @@ const App = () => {
         <CUET />
         <LearnandGrow />
         <ExamMotivation />
-        {/* <Card /> */}
       </div>
       <Footer />
     </>

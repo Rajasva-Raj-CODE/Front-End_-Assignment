@@ -1,5 +1,8 @@
 import React from "react";
-
+import facebook from '../../images/facebook-app-symbol.png'
+import linkedin from '../../images/linkedin.png'
+import twitter from '../../images/twitter.png'
+import youtube from '../../images/youtube.png'
 const Footer = () => {
   const links = [
     [
@@ -78,6 +81,20 @@ const Footer = () => {
               ))}
             </div>
           ))}
+        </div>
+
+        <div className="flex justify-between border-t border-gray-500 mt-8 ">
+          <div className="flex gap-5 mt-5">
+            <p>© 2024.Vedantu.com. All rights reserved</p>
+            <p>Privacy policy</p>
+            <p>Terms and conditions</p>
+          </div>
+          <div className="flex justify-between gap-8 mt-5">
+            <img src={facebook} alt="" className="h-[16px] w-[20px20px]" />
+            <img src={linkedin} alt="" className="h-[16px] w-[20px]" />
+            <img src={twitter} alt="" className="h-[16px] w-[20px]" />
+            <img src={youtube} alt="" className="h-[16px] w-[20px]" />
+          </div>
         </div>
       </div>
     </div>
