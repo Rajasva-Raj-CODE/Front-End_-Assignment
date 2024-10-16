@@ -1,8 +1,8 @@
 import React from "react";
-import facebook from '../../images/facebook-app-symbol.png'
-import linkedin from '../../images/linkedin.png'
-import twitter from '../../images/twitter.png'
-import youtube from '../../images/youtube.png'
+import facebook from "../images/facebook-app-symbol.png";
+import linkedin from "../images/linkedin.png";
+import twitter from "../images/twitter.png";
+import youtube from "../images/youtube.png";
 const Footer = () => {
   const links = [
     [
@@ -83,8 +83,8 @@ const Footer = () => {
           ))}
         </div>
 
-        <div className="flex justify-between border-t border-gray-500 mt-8 ">
-          <div className="flex gap-5 mt-5">
+        <div className="flex sm:flex-row flex-col   justify-between border-t border-gray-500 mt-8 ">
+          <div className="flex sm:gap-5 gap-[2px] mt-5">
             <p>© 2024.Vedantu.com. All rights reserved</p>
             <p>Privacy policy</p>
             <p>Terms and conditions</p>
